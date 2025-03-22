@@ -21,8 +21,12 @@ app.get("/webhook", (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Messenger Bot is live! 🚀");
+});
+
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
